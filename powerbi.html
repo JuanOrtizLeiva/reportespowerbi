@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Ufro Integrado</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Un tipo de letra más estándar */
+            margin: 0;
+            padding: 20px; /* Añade un poco de espacio alrededor */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido horizontalmente */
+            text-align: center; /* Centra el texto del encabezado */
+        }
+        .report-container {
+            width: 90%; /* El contenedor del reporte ocupará el 90% del ancho disponible */
+            max-width: 1200px; /* Pero no más de 1200px para no ser excesivamente ancho en pantallas grandes */
+            margin-top: 20px; /* Espacio arriba del reporte */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombra sutil para destacar el iframe */
+        }
+        iframe {
+            display: block; /* Para asegurar que ocupe su propio espacio correctamente */
+            width: 100%; /* El iframe ocupará el 100% del ancho de su contenedor (.report-container) */
+            border: none; /* Quita el borde predeterminado del iframe si lo tuviera */
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualización del Reporte Ufro</h1>
+
+    <div class="report-container">
+        <iframe title="Reporte Ufro" 
+                height="700"  src="https://app.powerbi.com/view?r=eyJrIjoiNzM0OWU4MGYtMTdmNC00YmViLTgwMGEtNTE2NWI3NjgwMGRiIiwidCI6IjUyZTllYWQ5LTk1MzQtNGMzZS04YTAwLTYxZjk2OGI5NzUwYiIsImMiOjR9" 
+                allowFullScreen="true">
+        </iframe>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 0.9em; color: #555;">
+        El contenido de este reporte es cargado desde Power BI.
+    </p>
+
+</body>
+</html>
